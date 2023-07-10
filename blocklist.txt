@@ -14310,8 +14310,6 @@ $removeparam=engagement_type
 ||big-iridium-637.appspot.com^
 ||bigcontent.io^
 ||bigmailer.io^
-||bilicdn1.com^
-||bilicdn2.com^
 ||bimbolive.com^
 ||bing.com^$badfilter
 ||bing.net^
