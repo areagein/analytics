@@ -15314,7 +15314,6 @@ $removeparam=engagement_type
 ||basis.net^
 ||bcdn9854324.com^
 ||bclaws.ca^
-||bdydns.com^
 ||bebasads.com^
 ||bedegaming.com^
 ||beopinion.com^
