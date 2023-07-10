@@ -18364,7 +18364,6 @@ ing.nl##.cookie-description
 ||phonepe.com^
 ||ovelin.com^
 ||quikr.com^
-||qq.com^
 ||ril.com^
 ||rometic.com^
 ||romwe.com^
