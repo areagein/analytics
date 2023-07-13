@@ -8125,7 +8125,6 @@ fd.nl##.fd-message
 ||ers.baidu.com^
 ||fc-.cdn.bcebos.com^
 ||fc-feed.cdn.bcebos.com^
-||fclick.baidu.com^
 ||fexclick.baidu.com^
 ||g.baidu.com^
 ||gimg.baidu.com^
@@ -17588,7 +17587,6 @@ debijenkorf.nl##.toast--show.toast
 ||ias.rakuten.co.jp^
 ||click.simba.taobao.com^
 ||log.mmstat.com^
-||taobao.com^
 ||dable.io^
 ||tlaol.com^
 ||a.sellpoint.com^
