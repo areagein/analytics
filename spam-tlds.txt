@@ -11,6 +11,8 @@
 ! Version: 2023.0720.1629.23
 ! Syntax: AdGuard
 !
+||rrpass.net^
+!
 ||agency^$denyallow=battlefield.agency|baam.agency|robotzebra.agency|uphotel.agency|ws.agency
 ||*.autos^
 ||bar^$denyallow=fap.bar
