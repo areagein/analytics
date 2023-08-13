@@ -1,0 +1,140 @@
+# Change the following lines if you want dnsmasq to serve SRV
+# records.
+# You may add multiple srv-host lines.
+# The fields are <name>,<target>,<port>,<priority>,<weight>
+
+# A SRV record sending LDAP for the example.com domain to
+# ldapserver.example.com port 289
+#srv-host=_ldap._tcp.example.com,ldapserver.example.com,389
+
+# Two SRV records for LDAP, each with different priorities
+#srv-host=_ldap._tcp.example.com,ldapserver.example.com,389,1
+#srv-host=_ldap._tcp.example.com,ldapserver.example.com,389,2
+
+# A SRV record indicating that there is no LDAP server for the domain
+# example.com
+#srv-host=_ldap._tcp.example.com
+
+# The following line shows how to make dnsmasq serve an arbitrary PTR
+# record. This is useful for DNS-SD.
+# The fields are <name>,<target>
+#ptr-record=_http._tcp.dns-sd-services,"New Employee Page._http._tcp.dns-sd-services"
+
+# Change the following lines to enable dnsmasq to serve TXT records.
+# These are used for things like SPF and zeroconf.
+# The fields are <name>,<text>,<text>...
+
+#Example SPF.
+#txt-record=example.com,"v=spf1 a -all"
+
+#Example zeroconf
+#txt-record=_http._tcp.example.com,name=value,paper=A4
+
+# Provide an alias for a "local" DNS name. Note that this _only_ works
+# for targets which are names from DHCP or /etc/hosts. Give host
+# "bert" another name, bertrand
+# The fields are <cname>,<target>
+#cname=bertand,bert
+#listen-address=127.0.0.1
+server=/ustc.edu.cn/192.168.88.1
+server=/openwrt.pool.ntp.org/192.168.88.1
+# dhcp-fqdn
+# [RFC6303]
+server=/10.IN-ADDR.ARPA/
+server=/16.172.IN-ADDR.ARPA/
+server=/17.172.IN-ADDR.ARPA/
+server=/18.172.IN-ADDR.ARPA/
+server=/19.172.IN-ADDR.ARPA/
+server=/20.172.IN-ADDR.ARPA/
+server=/21.172.IN-ADDR.ARPA/
+server=/22.172.IN-ADDR.ARPA/
+server=/23.172.IN-ADDR.ARPA/
+server=/24.172.IN-ADDR.ARPA/
+server=/25.172.IN-ADDR.ARPA/
+server=/26.172.IN-ADDR.ARPA/
+server=/27.172.IN-ADDR.ARPA/
+server=/28.172.IN-ADDR.ARPA/
+server=/29.172.IN-ADDR.ARPA/
+server=/30.172.IN-ADDR.ARPA/
+server=/31.172.IN-ADDR.ARPA/
+server=/168.192.IN-ADDR.ARPA/
+server=/0.IN-ADDR.ARPA/
+server=/127.IN-ADDR.ARPA/
+server=/254.169.IN-ADDR.ARPA/
+server=/2.0.192.IN-ADDR.ARPA/
+server=/100.51.198.IN-ADDR.ARPA/
+server=/113.0.203.IN-ADDR.ARPA/
+server=/255.255.255.255.IN-ADDR.ARPA/
+server=/0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.IP6.ARPA/
+server=/1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.IP6.ARPA/
+server=/D.F.IP6.ARPA/
+server=/8.E.F.IP6.ARPA/
+server=/9.E.F.IP6.ARPA/
+server=/A.E.F.IP6.ARPA/
+server=/B.E.F.IP6.ARPA/
+server=/8.B.D.0.1.0.0.2.IP6.ARPA/
+#   [RFC7793]
+server=/64.100.IN-ADDR.ARPA/
+server=/65.100.IN-ADDR.ARPA/
+server=/66.100.IN-ADDR.ARPA/
+server=/67.100.IN-ADDR.ARPA/
+server=/68.100.IN-ADDR.ARPA/
+server=/69.100.IN-ADDR.ARPA/
+server=/70.100.IN-ADDR.ARPA/
+server=/71.100.IN-ADDR.ARPA/
+server=/72.100.IN-ADDR.ARPA/
+server=/73.100.IN-ADDR.ARPA/
+server=/74.100.IN-ADDR.ARPA/
+server=/75.100.IN-ADDR.ARPA/
+server=/76.100.IN-ADDR.ARPA/
+server=/77.100.IN-ADDR.ARPA/
+server=/78.100.IN-ADDR.ARPA/
+server=/79.100.IN-ADDR.ARPA/
+server=/80.100.IN-ADDR.ARPA/
+server=/81.100.IN-ADDR.ARPA/
+server=/82.100.IN-ADDR.ARPA/
+server=/83.100.IN-ADDR.ARPA/
+server=/84.100.IN-ADDR.ARPA/
+server=/85.100.IN-ADDR.ARPA/
+server=/86.100.IN-ADDR.ARPA/
+server=/87.100.IN-ADDR.ARPA/
+server=/88.100.IN-ADDR.ARPA/
+server=/89.100.IN-ADDR.ARPA/
+server=/90.100.IN-ADDR.ARPA/
+server=/91.100.IN-ADDR.ARPA/
+server=/92.100.IN-ADDR.ARPA/
+server=/93.100.IN-ADDR.ARPA/
+server=/94.100.IN-ADDR.ARPA/
+server=/95.100.IN-ADDR.ARPA/
+server=/96.100.IN-ADDR.ARPA/
+server=/97.100.IN-ADDR.ARPA/
+server=/98.100.IN-ADDR.ARPA/
+server=/99.100.IN-ADDR.ARPA/
+server=/100.100.IN-ADDR.ARPA/
+server=/101.100.IN-ADDR.ARPA/
+server=/102.100.IN-ADDR.ARPA/
+server=/103.100.IN-ADDR.ARPA/
+server=/104.100.IN-ADDR.ARPA/
+server=/105.100.IN-ADDR.ARPA/
+server=/106.100.IN-ADDR.ARPA/
+server=/107.100.IN-ADDR.ARPA/
+server=/108.100.IN-ADDR.ARPA/
+server=/109.100.IN-ADDR.ARPA/
+server=/110.100.IN-ADDR.ARPA/
+server=/111.100.IN-ADDR.ARPA/
+server=/112.100.IN-ADDR.ARPA/
+server=/113.100.IN-ADDR.ARPA/
+server=/114.100.IN-ADDR.ARPA/
+server=/115.100.IN-ADDR.ARPA/
+server=/116.100.IN-ADDR.ARPA/
+server=/117.100.IN-ADDR.ARPA/
+server=/118.100.IN-ADDR.ARPA/
+server=/119.100.IN-ADDR.ARPA/
+server=/120.100.IN-ADDR.ARPA/
+server=/121.100.IN-ADDR.ARPA/
+server=/122.100.IN-ADDR.ARPA/
+server=/123.100.IN-ADDR.ARPA/
+server=/124.100.IN-ADDR.ARPA/
+server=/125.100.IN-ADDR.ARPA/
+server=/126.100.IN-ADDR.ARPA/
+server=/127.100.IN-ADDR.ARPA/
