@@ -616,7 +616,7 @@
 ||typekit.net^
 ||safebrowsing.google.com^
 ||safebrowsing.clients.google.com^
-||safebrowsing.googleapis.com^
+||safebrowsing.googleapis.com^$badfilter  # security over privacy i guess
 ||userlocation.googleapis.com^
 ||*-pa.googleapis.com^$third-party
 ||googleadservices.com^
@@ -1923,7 +1923,7 @@
 ||top-fwz1.mail.ru^
 ||a-mo.net^
 ||assets.a-mo.net^
-||i0.wp.com^
+||i0.wp.com^$badfilter  # CDN
 ||consent-cdn.zeit.de^
 ||interactive.zeit.de^
 ||k5a.io^
@@ -2079,8 +2079,8 @@
 ||locations.api.yle.fi^
 ||design-system.cdn.yle.fi^
 ||yle-consent-sdk.yle.fi^
-||cdnapisec.kaltura.com^
-||kaltura.com^
+||cdnapisec.kaltura.com^$badfilter  # Kaltura video stream
+||kaltura.com^$badfilter  # Kaltura video streaming
 ||tag-manager.yle.fi^
 ||tunnus-sdk.yle.fi^
 ||dax.yle.fi^
@@ -2142,7 +2142,7 @@
 ||cdn.provesrc.com^
 ||pushcrew.com^
 ||cdn.pushcrew.com^
-||i.pinimg.com^
+||i.pinimg.com^$badfilter  # Pinterest
 ||diffuser-cdn.app-us1.com^
 ||app-us1.com^
 ||qodeinteractive.com^
@@ -2737,6 +2737,7 @@
 ||fn0wz54v.dayugslb.com^
 ||dayugslb.com^
 ||at.alicdn.com^
+||alicdn.com^
 ||neatspy.com^
 ||i.neatspy.com^
 ||linkconnector.com^
@@ -3906,10 +3907,10 @@
 ||in.appcenter.ms^
 ||win10-trt.msedge.net^
 ||analytics.sketchup.com^
-||gmail.com.dbl.spamhaus.org^
-||dbl.spamhaus.org^
-||zen.spamhaus.org^
-||bl.spamcop.net^
+||gmail.com.dbl.spamhaus.org^$badfilter  # no a tracker
+||dbl.spamhaus.org^$badfilter  # not a tracker
+||zen.spamhaus.org^$badfilter  # bl.spamcop.net
+||bl.spamcop.net^$badfilter  # not a tracker
 ||ngpweb.com^
 ||gnpfesdk-pa.googleapis.com^
 ||fairsconsult.webpower.eu^
@@ -3917,7 +3918,7 @@
 ||mail.secondhome.nl^
 ||omappapi.com^
 ||a.omappapi.com^
-||secure.avaaz.org.dbl.spamhaus.org^
+||secure.avaaz.org.dbl.spamhaus.org^$badfilter  # not a trackr
 ||outlook.htrhosting.nl^$badfilter  # Not just email tracking
 ||analytics.localytics.com^
 ||profile.localytics.com^
@@ -5063,7 +5064,7 @@ merkur.dk##body:style(overflow: auto!important)
 ||s2s.singular.net^
 ||cc-api-data.adobe.io^
 ||activity.windows.com^
-||gllto.glpals.com^
+||gllto.glpals.com^$badfilter  # It's an A-GPS domain from Broadcom
 ||footprints-pa.googleapis.com^
 ||events.data.microsoft.com^
 ||api2.branch.io^
@@ -6436,7 +6437,7 @@ $removeparam=afftrack
 ||exacttarget.com^
 ||eulerian.com^
 ||estimote.com^
-||arcgis.com^
+||arcgis.com^$badfilter  # Map provider
 ||duapps.com^
 ||ad.duapps.com^
 ||dov-e.com^
@@ -8122,8 +8123,10 @@ fd.nl##.fd-message
 ||eiv.baidu.com^
 ||em.baidu.com^
 ||ers.baidu.com^
+||f10.baidu.com^
 ||fc-.cdn.bcebos.com^
 ||fc-feed.cdn.bcebos.com^
+||fclick.baidu.com^
 ||fexclick.baidu.com^
 ||g.baidu.com^
 ||gimg.baidu.com^
@@ -9382,6 +9385,9 @@ fd.nl##.fd-message
 ||impservicetest.dictapp.youdao.com^
 ||impservice-test.dictapp.youdao.com^
 ||v.baidu.com^
+||t10.baidu.com^
+||t11.baidu.com^
+||t12.baidu.com^
 ||tongji.baidu.com^
 ||msoftdl.360.cn^
 ||openbox.mobilem.360.cn^
@@ -12623,6 +12629,7 @@ www.yeeuu.com##+js(rc, modal-open, html, stay)
 ||appfire.app^
 ||sp.mail.notion.so^
 ||viapplogs.net^
+
 ||metric.gstatic.com^
 ||document360.io^
 ||cdn.document360.io^
@@ -12913,12 +12920,20 @@ $removeparam=engagement_type
 ||evrythng.com^
 ||jnn-pa.googleapis.com^
 ||0.0.0.1^
+
 ||0033000.com^
+
 ||0318media.nl^
+
 ||083950260099-attachments.s3.us-east-2.amazonaws.com^
+
 ||0914.global.ssl.fastly.net^
 ||0972cce1bc.com^
+
+
 ||0cf.io^
+
+
 ||0i0i0i0.com^
 ||0ps.us^
 ||10.240.0.27^
@@ -12929,7 +12944,10 @@ $removeparam=engagement_type
 ||1003219085.rsc.cdn77.org^
 ||1009550802.rsc.cdn77.org^
 ||100percentfedup.com^
+
 ||100widgets.com^
+
+
 ||1039875894.rsc.cdn77.org^
 ||1050947521.rsc.cdn77.org^
 ||1061392081.rsc.cdn77.org^
@@ -12937,10 +12955,12 @@ $removeparam=engagement_type
 ||1075202878.rsc.cdn77.org^
 ||1075914428.rsc.cdn77.org^
 ||1077603801.rsc.cdn77.org^
+
 ||1081894472.rsc.cdn77.org^
 ||1083328646.rsc.cdn77.org^
 ||1085610534.rsc.cdn77.org^
 ||1087935514.rsc.cdn77.org^
+
 ||1088045785.rsc.cdn77.org^$badfilter  # CDN KDE
 ||1094578850.rsc.cdn77.org^
 ||10upmanaged.com^
@@ -12948,12 +12968,15 @@ $removeparam=engagement_type
 ||110.93.143.144^
 ||1111210941.rsc.cdn77.org^
 ||1118660075.rsc.cdn77.org^
+
+
 ||1140978756.rsc.cdn77.org^
 ||1179033234.rsc.cdn77.org^
 ||118.89.204.198^
 ||1184954541.rsc.cdn77.org^
 ||11880.com^
 ||1197833925.rsc.cdn77.org^
+
 ||11pt5z46nuudt9qxx2knwgff-wpengine.netdna-ssl.com^
 ||11tcma2eyqgmz6zyt1x6na8n-wpengine.netdna-ssl.com^
 ||120askimages.com^
@@ -12968,12 +12991,22 @@ $removeparam=engagement_type
 ||123rf.s3.amazonaws.com^
 ||123stat.com^
 ||1240611520.rsc.cdn77.org^
+
+||126.net^
 ||127.0.0.1^
+||127.net^
+
 ||1287719000.rsc.cdn77.org^
+
 ||128dagwixzkuuk9y3guyf7fd-wpengine.netdna-ssl.com^
+
+
 ||12flirt.com^
 ||12h9ep29ycsl2dboql29k7wd-wpengine.netdna-ssl.com^
 ||12heo23rv2vmkb53o3ieq02f-wpengine.netdna-ssl.com^
+
+
+
 ||13.cl^
 ||1320288971.rsc.cdn77.org^
 ||1324547246.rsc.cdn77.org^
@@ -12982,15 +13015,25 @@ $removeparam=engagement_type
 ||133.130.89.16^
 ||1337x2.xyz^
 ||1338794416.rsc.cdn77.org^
+
+
 ||1355612476.rsc.cdn77.org^
+
+
 ||1388rt3s63ww26xq2217rr5my4t-wpengine.netdna-ssl.com^
+
 ||139.99.130.166^
 ||139.99.55.81^
+
+
+
 ||1404752763.rsc.cdn77.org^
 ||1409791524.rsc.cdn77.org^
+
 ||141.98.8.106^
 ||1410770579.rsc.cdn77.org^
 ||141tube.com^
+
 ||1429384804.rsc.cdn77.org^
 ||144.126.138.140^
 ||144.91.116.224^
@@ -13006,31 +13049,44 @@ $removeparam=engagement_type
 ||1509774155.rsc.cdn77.org^
 ||1527bf2da3.com^
 ||1555957453.rsc.cdn77.org^
+
 ||1575730577.rsc.cdn77.org^
 ||1585089255.rsc.cdn77.org^
 ||1587701074.rsc.cdn77.org^
 ||159.223.34.146^
 ||159.89.202.208^
+
+
+
 ||1601957106.rsc.cdn77.org^
+
 ||161.97.125.183^
 ||1618173684.rsc.cdn77.org^
 ||162.0.220.138^
 ||162.255.116.200^
 ||1626665265.rsc.cdn77.org^
+||163.com^
 ||1630810589.rsc.cdn77.org^
+||163jiasu.com^
 ||1641310072.rsc.cdn77.org^
 ||1641998492.rsc.cdn77.org^
 ||1646039872.rsc.cdn77.org^
+
 ||1654771672.rsc.cdn77.org^
 ||1658444117.rsc.cdn77.org^
 ||1666210260.rsc.cdn77.org^
 ||167.99.77.72^
+
 ||168logger.com^
+
 ||16iwyl195vvfgoqu3136p2ly-wpengine.netdna-ssl.com^
+
 ||1704183692.rsc.cdn77.org^
 ||1704743398.rsc.cdn77.org^
+
 ||171745.com^
 ||171dxwjpaqv2danpq11ixf2j-wpengine.netdna-ssl.com^
+
 ||1720289623.rsc.cdn77.org^
 ||1727357668.rsc.cdn77.org^
 ||173.208.216.250^
@@ -13038,9 +13094,15 @@ $removeparam=engagement_type
 ||1739712465.rsc.cdn77.org^
 ||1751350540.rsc.cdn77.org^
 ||1751390105.rsc.cdn77.org^
+
+
+
 ||1789235708.rsc.cdn77.org^
+
 ||1792469337.rsc.cdn77.org^
 ||1794199541.rsc.cdn77.org^
+
+
 ||17app.co^
 ||17iy0p49ts4537ovpn2g0scc-wpengine.netdna-ssl.com^
 ||17uh3i2b989t1jf7qqepkxez-wpengine.netdna-ssl.com^
@@ -13048,7 +13110,10 @@ $removeparam=engagement_type
 ||1800flowers.map.fastly.net^
 ||1800petmeds.com^
 ||1817141586.rsc.cdn77.org^
+
 ||1824867661.rsc.cdn77.org^
+
+
 ||185.250.149.60^
 ||1851774772.rsc.cdn77.org^
 ||1853586421.rsc.cdn77.org^$badfilter  # not a tracker
@@ -13056,16 +13121,21 @@ $removeparam=engagement_type
 ||1855684048.rsc.cdn77.org^
 ||1871350125.rsc.cdn77.org^
 ||1874201666.rsc.cdn77.org^
+
 ||1884403144.rsc.cdn77.org^
 ||1884695191.rsc.cdn77.org^
 ||1887dt387czs25eqxs3c1ipg-wpengine.netdna-ssl.com^
 ||1891408184.rsc.cdn77.org^
 ||1894269931.rsc.cdn77.org^
+
 ||18f-cloud.com^
+
 ||1900780057.rsc.cdn77.org^
 ||1907362850.rsc.cdn77.org^
 ||1908021515.rsc.cdn77.org^
 ||1908926391.rsc.cdn77.org^
+
+
 ||1925807164.rsc.cdn77.org^
 ||194.187.99.221^
 ||194.187.99.222^
@@ -13074,22 +13144,32 @@ $removeparam=engagement_type
 ||194.233.91.97^
 ||1948868209.rsc.cdn77.org^
 ||195.43.95.234^
+
 ||1964890999.rsc.cdn77.org^
 ||1978974432.rsc.cdn77.org^
+
 ||1989903441.rsc.cdn77.org^
+
 ||1992299737.rsc.cdn77.org^
 ||1997245118.rsc.cdn77.org^
 ||1998191364.rsc.cdn77.org^
+
 ||1a-infosysteme.de^
 ||1aautoimages.com^
 ||1ashemaletube.com^
 ||1bis.com^
 ||1boyz.com^
+
 ||1cros.net^
+
+
+
 ||1dmp.io^
 ||1drlj71280m23ofmk22n7tbp-wpengine.netdna-ssl.com^
 ||1dx1ha2o9633412a0g3rw4xf-wpengine.netdna-ssl.com^
 ||1e100cdn.net^
+
+
 ||1f6yb11rynqr131j50326o9c-wpengine.netdna-ssl.com^
 ||1gb82h2px4rr3s7tp94g0nt1-wpengine.netdna-ssl.com^
 ||1gr.cz^
@@ -13121,6 +13201,7 @@ $removeparam=engagement_type
 ||1und1.eu^
 ||1v5ymx3zt3y73fq5gy23rtnc-wpengine.netdna-ssl.com^
 ||1vag.com^
+
 ||1w7w6z2gxfxq1imt5129fesh-wpengine.netdna-ssl.com^
 ||1worldonline.com^
 ||1worldsync.com^
@@ -13139,17 +13220,21 @@ $removeparam=engagement_type
 ||209.58.183.133^
 ||209.95.51.190^
 ||209.97.174.112^
+
 ||20fd661yccar325znz1e9bdl-wpengine.netdna-ssl.com^
 ||20lisa1ukask2skqr737a50o-wpengine.netdna-ssl.com^
 ||20m.es^
 ||20mn.fr^
 ||20mn.io^
 ||21pron.com^
+
 ||220images.net^
 ||2222.ro^
 ||23.92.69.100^
 ||234doo.com^
+
 ||23rdbromleyscouts.org^
+
 ||23yh6n2nmr011tw67k37tbif-wpengine.netdna-ssl.com^
 ||24.co.za^
 ||24.com^
@@ -13177,13 +13262,24 @@ $removeparam=engagement_type
 ||24ur.si^
 ||24video.ws^
 ||24vita.de^
+
+
+
 ||253qv1sx4ey389p9wtpp9sj0-wpengine.netdna-ssl.com^
 ||25purb1qs9y91rvlxr44yeeg-wpengine.netdna-ssl.com^
 ||25udam187zpf2mzghz28ihhs-wpengine.netdna-ssl.com^
+
+
+
+
 ||26n9kh1905s2j9i8k1dddift-wpengine.netdna-ssl.com^
+
+
 ||27gugn2cjlf23by7ems65e21-wpengine.netdna-ssl.com^
 ||27qfj.x.incapdns.net^
 ||287rdd4e492u2pyoiu9wz52k-wpengine.netdna-ssl.com^
+
+
 ||29y1pu2xvdbzd0g2823sa275-wpengine.netdna-ssl.com^
 ||2a.media^
 ||2adpro.com^
@@ -13201,6 +13297,8 @@ $removeparam=engagement_type
 ||2e8ram2s1li74atce18qz5y1-wpengine.netdna-ssl.com^
 ||2edaadmin.ch^
 ||2f13yq12csmv2yraq925m73i-wpengine.netdna-ssl.com^
+
+
 ||2fdltvvn8wp2rn64ywgk8o17-wpengine.netdna-ssl.com^
 ||2fgtku2x783y1ywhc01gmd67-wpengine.netdna-ssl.com^
 ||2gic212zgjlm2bcqpo21qnpk-wpengine.netdna-ssl.com^
@@ -13236,14 +13334,21 @@ $removeparam=engagement_type
 ||300624.com^
 ||300daytravel.com^
 ||304a46cc9a.com^
+
 ||31.204.145.96^
 ||316xavyzpk7494f8p6dpp5n5-wpengine.netdna-ssl.com^
+
 ||32.134.125.107^
 ||329zviwchun16hc302ozrz41-wpengine.netdna-ssl.com^
+
 ||33.49.50.126^
+
+
 ||34a1ju2gva4u3yrm051vedfb-wpengine.netdna-ssl.com^
 ||34pavouhj7.com^
+
 ||34yswl46f2bur9wc83mxcqu1-wpengine.netdna-ssl.com^
+
 ||360.cn^
 ||360and1.com^
 ||362w9z5h7jnfe1t2q4zqjyqb-wpengine.netdna-ssl.com^
@@ -13252,25 +13357,32 @@ $removeparam=engagement_type
 ||365lpodds.com^
 ||366.fr^
 ||366676952.r.cdn77.net^
+
 ||36wi5hm.x.incapdns.net^
 ||380kyt9r67o2n57k2r9rrr8x-wpengine.netdna-ssl.com^
 ||390109.smushcdn.com^
+
 ||3ahs13ezpx115i34i3vbbopw-wpengine.netdna-ssl.com^
 ||3anx.net^
 ||3apps.ie^
 ||3asyr.com^
 ||3bmeteo.com^
 ||3c9sm1yzqy518hwx3f6o4c64-wpengine.netdna-ssl.com^
+
 ||3ci6gd82qqe3lh3ugujrds6j-wpengine.netdna-ssl.com^
 ||3cx.com^$badfilter  # Not a tracker
 ||3cx.us^$badfilter  # not a tracker
+
 ||3djuegos.com^
 ||3dlancer.net^
+
 ||3ds.com^
 ||3dstats.com^
 ||3dtuman.com^
 ||3dtxp19t9eb3fmumt31248pw-wpengine.netdna-ssl.com^
+
 ||3exvfbh.x.incapdns.net^
+
 ||3fa44b2156.com^
 ||3fxtqy18kygf3on3bu39kh93-wpengine.netdna-ssl.com^
 ||3gateway.net^
@@ -13281,6 +13393,7 @@ $removeparam=engagement_type
 ||3jzi0q2zthm01oqpx2h96lz1-wpengine.netdna-ssl.com^
 ||3kqo2r1c2kzy3oyiqn2r1gjb-wpengine.netdna-ssl.com^
 ||3lib.net^
+
 ||3m.com^$badfilter  # not a tracker
 ||3m7ajlsrzj92lfd1hu16hu7vc-wpengine.netdna-ssl.com^
 ||3naked.com^
@@ -13292,6 +13405,7 @@ $removeparam=engagement_type
 ||3r19eb4fqlos1irh8c1q6941-wpengine.netdna-ssl.com^
 ||3u28iz2ujc8a178j1f2ql9ic-wpengine.netdna-ssl.com^
 ||3um88b32jzg41py2lr3fg1uh-wpengine.netdna-ssl.com^
+
 ||3wyeqy4dxigg2xrxyo4c110h-wpengine.netdna-ssl.com^
 ||3xpl.stream^
 ||3xplanet.com^
@@ -13324,6 +13438,7 @@ $removeparam=engagement_type
 ||40n23zgkic3y-a.akamaihd.net^
 ||40nuggets.com^
 ||40pg2e2187urs70xz2sj2xo6-wpengine.netdna-ssl.com^
+
 ||41jmzr10f8zc229tzr2xml7e-wpengine.netdna-ssl.com^
 ||41k4p01v6nzq13r4y42jb9xv-wpengine.netdna-ssl.com^
 ||42e7xc172a051i7v1iyv99nn-wpengine.netdna-ssl.com^
@@ -13333,17 +13448,26 @@ $removeparam=engagement_type
 ||434h9n4821mi1mka7c2h72ig-wpengine.netdna-ssl.com^
 ||43d897265kne3ed0qv2ecjw2-wpengine.netdna-ssl.com^
 ||43nnuk1fz4a72826eo14gwfb-wpengine.netdna-ssl.com^
+
+
 ||44figk28e7sf2xjn7olhdqyd-wpengine.netdna-ssl.com^
+
 ||45.89.67.165^
 ||451.io^
+
 ||477612.smushcdn.com^
 ||47nbvyrwh9j46nc9y2yx7ac1-wpengine.netdna-ssl.com^
 ||480app.com^
 ||4840988537.com^
 ||48kb9f45m18qznbf21s4cllq-wpengine.netdna-ssl.com^
 ||48qbc13dv397vzass1iql2a1-wpengine.netdna-ssl.com^
+
+
 ||4ag46i294nta1038p13v77x1-wpengine.netdna-ssl.com^
 ||4aozg2yddrfwclgn4z1yj42g-wpengine.netdna-ssl.com^
+
+
+
 ||4c6dss208iw81m6h4re71q8o-wpengine.netdna-ssl.com^
 ||4cdn.org^
 ||4chan.org^
@@ -13353,6 +13477,7 @@ $removeparam=engagement_type
 ||4dp.top^
 ||4dsbanner.net^
 ||4dsply.com^
+
 ||4fpnph3j8bls2w9fqo3k4xd5-wpengine.netdna-ssl.com^
 ||4fsl4b2ha2841x0gnm21onox40a-wpengine.netdna-ssl.com^
 ||4hfchest5kdnfnut.com^
@@ -13366,6 +13491,7 @@ $removeparam=engagement_type
 ||4teachers.de^
 ||4tellcdn.azureedge.net^
 ||4uc.org^
+
 ||4wdsc.com^
 ||4wmarketplace.com^
 ||4wnetwork.com^
@@ -13373,24 +13499,36 @@ $removeparam=engagement_type
 ||4xc4ep.net^
 ||4zobnzc.x.incapdns.net^
 ||506.io^
+
+
 ||51.222.2.14^
 ||51.254.84.63^
 ||51.79.224.26^
 ||512-015.net^
 ||517459.smushcdn.com^
+
 ||51degrees.com^
 ||51tracking.com^
+
 ||52gg.net^
+
+
 ||535485.smushcdn.com^
 ||5378.org^
 ||53kf.com^
 ||54proxy.com^
+
+
+
 ||55f9d6e755.com^
 ||55labs.com^
 ||57jobs.de^
+
 ||58dp.net^
 ||5cacard.ru^
 ||5d3x.net^
+
+
 ||5gcdn.net^
 ||5h76kih.x.incapdns.net^
 ||5hd.co^
@@ -13405,21 +13543,47 @@ $removeparam=engagement_type
 ||5toft8or7on8tt.com^
 ||5vju.net^
 ||62ac0a5777dcfd000863a23b--pat-splash.netlify.app^
+
+
 ||65twenty.com^
+
 ||66.165.229.106^
 ||67.222.134.173^
+
+
+
+
 ||69v.club^
+
+
+
 ||6ez2eqk.x.incapdns.net^
+
 ||6q33.net^
 ||6q76vgh.x.incapdns.net^
 ||6sxm959.x.incapdns.net^
 ||6tm.eu^
+
 ||6wo3n64.x.incapdns.net^
+
 ||71i.de^
+
+
+
 ||739952.smushcdn.com^
+
+
+
+
+
 ||79ic8e.net^
+
+
+
 ||7ca78m3csgbrid7ge.com^
+
 ||7eb5opl.x.incapdns.net^
+
 ||7gra.us^
 ||7graus.com^
 ||7kkxxzr.x.incapdns.net^
@@ -13430,19 +13594,36 @@ $removeparam=engagement_type
 ||7u6hr3e68iv1jahzo11ixwd5-wpengine.netdna-ssl.com^
 ||7v2agdo.x.incapdns.net^
 ||7vid.net^
+
 ||7xbid.com^
 ||7xde.net^
 ||7xjpy4d.x.incapdns.net^
 ||80.77.89.177^
 ||805019.smushcdn.com^
+
 ||81dix1oo56s3h5et73pjxme1-wpengine.netdna-ssl.com^
+
+
 ||829395.smushcdn.com^
 ||82rc.net^
+
 ||832212.smushcdn.com^
+
+
+
 ||840027.smushcdn.com^
+
 ||87.98.156.59^
+
+
 ||888asian.com^
 ||888sport.se^
+
+
+
+
+
+
 ||8f6i.net^
 ||8h01.com^
 ||8ne3.net^
@@ -13453,16 +13634,29 @@ $removeparam=engagement_type
 ||91-img.com^
 ||9111s.ru^
 ||9165619.com^
+
 ||93.115.31.155^
+
+
 ||940388.smushcdn.com^
+
 ||95.214.54.201^
 ||951199.smushcdn.com^
 ||952ws4ayphb1pfk6hy8v3gfr-wpengine.netdna-ssl.com^
+
+
+
+
+
 ||9a7f6a3c-8431-438c-89d9-90924a59e618.akamaized.net^
+
+
 ||9c9media.com.edgesuite.net^
+
 ||9cache.com^$badfilter  # image cdn
 ||9cdn.net^
 ||9eriz.x.incapdns.net^
+
 ||9now.com.au^
 ||9pctbx.net^
 ||9poxrsw.x.incapdns.net^
@@ -13481,10 +13675,14 @@ $removeparam=engagement_type
 ||a07ab9344ba664701878fcbc535973ec-983232249.eu-central-1.elb.amazonaws.com^
 ||a0e50ef73607b11e79ba902bfc1c6ba7-25949453.ap-southeast-2.elb.amazonaws.com^
 ||a0s.net^
+
 ||a16z.com^
 ||a1d3fec-a.akamaihd.net^
 ||a1tb.com^
 ||a2.shared.global.fastly.net^
+
+
+
 ||a24help.ru^
 ||a2d.tv^
 ||a2hosted.com^
@@ -13510,9 +13708,12 @@ $removeparam=engagement_type
 ||a9a0038a9101a42a8be1d39238397e13-1092934236.us-east-1.elb.amazonaws.com^
 ||a9e83e9b144614a02973f6d34bf694bd-1401248241.us-east-1.elb.amazonaws.com^
 ||a9yw.net^
+
 ||aa.com^$badfilter  # not a tracker
+
 ||aaa200.rocks^
 ||aaacompany.net^
+
 ||aaas.org^$badfilter  # not a tracker
 ||aaasouth.com^
 ||aaawebstore.com^
@@ -13539,6 +13740,7 @@ $removeparam=engagement_type
 ||abc-cdn.net.au^$badfilter  # not a tracker
 ||abc-host.net.au^
 ||abc.net.au^$badfilter  # not a tracker
+
 ||abc17news.b-cdn.net^
 ||abcimg.es^
 ||abcmedia.no^
@@ -13546,6 +13748,7 @@ $removeparam=engagement_type
 ||abcotvssb.net^
 ||abczdrowie.pl^
 ||abebookscdn.com^
+
 ||abgemea.com^
 ||abjectionremarksdisarm.com^
 ||ablestar.app^
@@ -13568,6 +13771,7 @@ $removeparam=engagement_type
 ||abrye.com^
 ||abschied.b-cdn.net^
 ||abservinean.com^
+
 ||absoluteroute.com^
 ||absorbingband.com^
 ||abstractapi.com^
@@ -13619,6 +13823,7 @@ $removeparam=engagement_type
 ||acdn5165543.com^
 ||acdn923132475.com^
 ||acecounter.com^
+
 ||acewebcontent.azureedge.net^
 ||acewebstatic.azureedge.net^
 ||acexedge.com^
@@ -13664,6 +13869,7 @@ $removeparam=engagement_type
 ||activengage.com^
 ||activeskill.com^
 ||activetrail.com^
+
 ||activityboard.jp^
 ||actlz.github.io^
 ||actonservice.com^
@@ -13681,6 +13887,7 @@ $removeparam=engagement_type
 ||31173.se^
 ||45.89.66.142^
 ||51-116-131-221_s-92-123-194-148_ts-1655798738-clienttons-s.akamaihd.net^
+
 ||91bjav.com^
 ||acfc8b5ca7.com^
 ||acfrg.com^
@@ -13703,6 +13910,7 @@ $removeparam=engagement_type
 ||adglare.net^
 ||adgrx.com^
 ||adhaven.com^
+
 ||adingo.jp^
 ||adinplay.com^
 ||adinplay.workers.dev^
@@ -13714,9 +13922,11 @@ $removeparam=engagement_type
 ||adme-net.com^
 ||admeira.ch^
 ||adnet.de^
+
 ||adobe.com.edgesuite.net^$badfilter  # not a tracker
 ||adobe.com^$badfilter  # not a tracker
 ||adobedc.net^
+
 ||adobetarget.com^
 ||adpartner.pro^
 ||adpone.com^
@@ -13754,11 +13964,13 @@ $removeparam=engagement_type
 ||aidata.io^
 ||aimtell.com^
 ||air.tv^
+
 ||airpr.com^
 ||aisvip-a.akamaihd.net^
 ||aixport.de^
 ||ajax.googleapis.com^$badfilter  # required library
 ||akacdn.co^
+
 ||akamai.com^$badfilter  # not a tracker
 ||akmxts.com^
 ||alamy.com^
@@ -13768,6 +13980,7 @@ $removeparam=engagement_type
 ||alexa.com^
 ||algolia.net^$badfilter  # search cdn
 ||algolianet.com^$badfilter  # search cdn
+
 ||alicloudapi.com^
 ||aliveachiever.com^
 ||all4phones.de^
@@ -13782,17 +13995,20 @@ $removeparam=engagement_type
 ||amavalet.com^
 ||amazon.co.uk^$badfilter  # not a tracker
 ||amazon.com^$badfilter  # not a tracker
-||amazon.de^
+||amazon.de^$badfilter  # Amazon store
 ||amp.akamaized.net^
 ||amplifoninternal.com^
 ||ams-pageview-public.s3.amazonaws.com^
 ||ams.to^
 ||amung.us^
 ||amunx.de^
+
 ||analyser.de^
 ||analysis.fi^
+
 ||analyze.ly^
 ||ancensoredcloud2.xyz^
+
 ||andromedae-b.com^
 ||aninter.net^
 ||anivi.xyz^
@@ -13822,13 +14038,17 @@ $removeparam=engagement_type
 ||assertive.workers.dev^
 ||assoc-amazon.de^
 ||at-o.net^
+
+
 ||atf-tagmanager.de^
+
 ||atomik.vip^
 ||atsptp.com^
 ||att.com^
 ||attentivemobile.com^
 ||attn.tv^
 ||attraqt.com^
+
 ||audi.com^$badfilter  # not a tracker
 ||audiencemanager.de^
 ||audionow.de^
@@ -13836,11 +14056,13 @@ $removeparam=engagement_type
 ||ausgezeichnet.org^
 ||auth0.com^$badfilter  # not a tracker
 ||authorized.by^
+
 ||autodesk.com^$badfilter  # not a tracker
 ||autoscout24.com^$badfilter  # not a tracker
 ||avada.io^
 ||avads.net^
 ||avantisvideo.com^
+
 ||avct.cloud^
 ||avenga.cloud^
 ||avplayer.com^
@@ -13864,7 +14086,9 @@ $removeparam=engagement_type
 ||backmarket.io^
 ||bahn-x.de^
 ||bahn.de^$badfilter  # not a tracker, german railway
+!||baidu.com^
 ||baimgfroggd.site^
+
 ||bannerflow.net^
 ||bannersnack.com^
 ||bantgoau.com^
@@ -13911,11 +14135,18 @@ $removeparam=engagement_type
 ||biguz.net^
 ||bikenetzwerk.de^
 ||123rf.com^
+
+
+
 ||1u0b5867gsn1ez16a1p2vcj1-wpengine.netdna-ssl.com^
 ||20-193-45-113_s-23-48-96-104_ts-1655832865-clienttons-s.akamaihd.net^
 ||20-193-45-113_s-23-55-38-58_ts-1655835492-clienttons-s.akamaihd.net^
 ||3plearning.net^
+
+
+
 ||7332e169-default-pushgatew-f651-1288904419.ap-southeast-2.elb.amazonaws.com^
+
 ||abcnews.com^$badfilter  # not a tracker
 ||acmi-website-media-prod.s3.amazonaws.com^
 ||adaraanalytics.com^
@@ -13960,6 +14191,7 @@ $removeparam=engagement_type
 ||airrobe.com^
 ||airtrfx.com^
 ||ak21727.com^
+
 ||ako.ai^
 ||alb-logs-http-rum-pub-s0-1171131448.us-east-1.elb.amazonaws.com^
 ||aliyuncs.com^
@@ -14083,6 +14315,8 @@ $removeparam=engagement_type
 ||big-iridium-637.appspot.com^
 ||bigcontent.io^
 ||bigmailer.io^
+||bilicdn1.com^
+||bilicdn2.com^
 ||bimbolive.com^
 ||bing.com^$badfilter
 ||bing.net^
@@ -14091,6 +14325,7 @@ $removeparam=engagement_type
 ||bitcoinbazis.hu^
 ||bitgravity.com^
 ||bizibly.com^
+
 ||blackbaudhosting.com^
 ||blackcrow.ai^
 ||bleepstatic.com^$badfilter  # :CDN of bleepingcomputer
@@ -14100,6 +14335,7 @@ $removeparam=engagement_type
 ||blubrry.com^$badfilter  # podcast hosting
 ||blueberry.map.fastly.net^$badfilter  # podcast hosting
 ||bluecore.com^
+
 ||bluemix.net^
 ||blueplanetcertificate.com^
 ||bnbstatic.com^
@@ -14109,6 +14345,7 @@ $removeparam=engagement_type
 ||bnmla.com^
 ||bnt-cdn.b-cdn.net^
 ||bodiscdn.com^
+
 ||bold360.com^
 ||boltdns.net^$badfilter  # CDN
 ||bongacams.com^
@@ -14159,6 +14396,7 @@ $removeparam=engagement_type
 ||bustle.com^
 ||buzzfeed.com^
 ||buzzsprout.com^$badfilter  # not a tracker
+
 ||bycsi.com^
 ||bydata.com^
 ||byteoversea.com.edgesuite.net^
@@ -14166,8 +14404,11 @@ $removeparam=engagement_type
 ||c-ovn.jp^
 ||c212.net^
 ||c3tag.com^
+
 ||ca-central-1.amazonaws.com^
 ||ca-richimage.com^
+
+
 ||cabnnr.com^
 ||calculatorsonline.com.au^
 ||calendly.com^
@@ -14185,12 +14426,14 @@ $removeparam=engagement_type
 ||capterra.com^
 ||captifymedia.com^
 ||carambo.la^
+
 ||carecart.io^
 ||cartkit-public.s3.amazonaws.com^
 ||cartkitcdn.com^
 ||cartstack.com^
 ||cashewsforlife208.com^
 ||cassiecloud.com^
+
 ||catsnbootsncats2020.com^
 ||cauly.co.kr^
 ||cbc.ca^$badfilter  # not a tracker
@@ -14214,6 +14457,7 @@ $removeparam=engagement_type
 ||cdnbasket.net^
 ||cdndex.io^
 ||cdngain.com^
+||cdngslb.com^
 ||cdninstagram.com^$badfilter  # Required for instagram
 ||cdnjs.com^
 ||cdnjs.work^
@@ -14235,6 +14479,7 @@ $removeparam=engagement_type
 ||chemistwarehouse.com.au^
 ||cheqzone.com^
 ||childlikeform.com^
+
 ||chipmanksmochus.com^
 ||chl7rysobc3ol6xla.com^
 ||chmod777.ltd^
@@ -14273,7 +14518,9 @@ $removeparam=engagement_type
 ||cloudlogobox.com^
 ||clrstm.com^
 ||cms-cache-prod-1890262424.us-east-1.elb.amazonaws.com^
+
 ||cnbc.com^$badfilter  # not a tracker
+
 ||cnevids.com^
 ||cnews.cz^$badfilter  # not a tracke
 ||cnnx.link^
@@ -14294,6 +14541,10 @@ $removeparam=engagement_type
 ||coinzilla.com^
 ||coles.com.au^
 ||colossusssp.com^
+
+
+
+
 ||comicbook.map.fastly.net^
 ||comm100.io^
 ||comodo.com^
@@ -14328,6 +14579,7 @@ $removeparam=engagement_type
 ||corel.com^$badfilter  # not a tracker
 ||costco-adbutler.com^
 ||costco-static.com^
+
 ||covet.pics^
 ||cpmstar.com^
 ||cpx.to^
@@ -14466,6 +14718,7 @@ $removeparam=engagement_type
 ||ca.edgesuite.net^
 ||cachefly.net^$badfilter  # cdn
 ||calgary.ca^
+
 ||calmcactus.com^
 ||camschat.net^
 ||canada.ca^$badfilter  # not a tracker
@@ -14474,6 +14727,7 @@ $removeparam=engagement_type
 ||canadapost-postescanada.ca^
 ||canadianevergreen.com^
 ||canadiantire.ca^
+
 ||capig-appli-1cb8h7tn7ozej-1283435480.us-east-1.elb.amazonaws.com^
 ||capitalone.com^
 ||capitalonegslbex.com^
@@ -14483,6 +14737,7 @@ $removeparam=engagement_type
 ||carrierzone.com^
 ||cartfulsolutions.com^
 ||ccg-analytics-server-prod.herokuapp.com^
+
 ||cconnect.s3.amazonaws.com^
 ||ccscserver.com^
 ||cdic.ca^
@@ -14492,6 +14747,7 @@ $removeparam=engagement_type
 ||cdnbay.com^
 ||cdnpark.com^
 ||cdnvideo.ru^
+
 ||celtraidentity.com^
 ||central1.cc^
 ||certona.net^
@@ -14526,6 +14782,10 @@ $removeparam=engagement_type
 ||clknrtrg.pro^
 ||cloudflareresearch.com^
 ||cntxtfl.com^
+
+
+
+
 ||conectys.com^
 ||connextra.com^
 ||contactatonce.com^
@@ -14544,6 +14804,7 @@ $removeparam=engagement_type
 ||corus.ca^
 ||corusappservices.com^
 ||corusdigitaldev.com^
+
 ||countryflags.io^
 ||cpap.map.fastly.net^
 ||cpxstoreimages.com^
@@ -14572,6 +14833,7 @@ $removeparam=engagement_type
 ||coolblue.eu^$badfilter  # not a tracker
 ||cormes.de^
 ||cosstores.com^$badfilter  # it is required for images and content of cos.com
+
 ||cptrack.de^
 ||creditreform.de^
 ||crobox.com^
@@ -14704,7 +14966,9 @@ $removeparam=engagement_type
 ||dditscdn.com^
 ||ddl88dmz00fwt.cloudfront.net^
 ||ddrvjrfwnij7n.cloudfront.net^
+
 ||de.akamaized.net^
+
 ||de.edgesuite.net^
 ||de17a.com^
 ||de2pmm85odupd.cloudfront.net^
@@ -14718,6 +14982,7 @@ $removeparam=engagement_type
 ||deliverimp.com^
 ||dell-cidr.akadns.net^
 ||delmovip.com^
+
 ||demandware.net^
 ||dentsu.de^
 ||deskline.net^
@@ -14731,8 +14996,10 @@ $removeparam=engagement_type
 ||di5.biz^
 ||diablo3.com^
 ||dialogtech.com^
+
 ||digiaccess.org^
 ||digicert.com^$badfilter  # not just a tracker
+
 ||digitalgov.gov^$badfilter  # not a tracker only dap subdomain is
 ||digitalpfizer.com^
 ||digitalriver.com^
@@ -14751,12 +15018,13 @@ $removeparam=engagement_type
 ||djiops.com^
 ||dk0fkjygbn9vu.cloudfront.net^
 ||dl8.me^
-||dld6x5yyx2pqw.cloudfront.net^
+||dld6x5yyx2pqw.cloudfront.net^$badfilter  # Image CDN
 ||dm-event.net^
 ||dm-static.com^
 ||dmm.co.jp^
 ||dmxleo.com^
 ||dnlgm0m0r44nl.cloudfront.net^
+||dnsv1.com^
 ||dolphin-featur-959dff-1596521323-137501366.eu-west-1.elb.amazonaws.com^
 ||dood.video^$badfilter  # cdn
 ||doodcdn.co^
@@ -14834,7 +15102,10 @@ $removeparam=engagement_type
 ||congstar-media.de^
 ||conrad.de^$badfilter  # not a trackeer
 ||consentconverter.com^
+
+
 ||24log.es^
+
 ||aa2xx.xyz^
 ||addresseepaper.com^
 ||adept-shop-ui.s3.us-east-2.amazonaws.com^
@@ -14854,6 +15125,7 @@ $removeparam=engagement_type
 ||adsupplyssl.com^
 ||adtector.com^
 ||adultvideotop.com^
+
 ||advancelocal.map.fastly.net^
 ||adverline.com^
 ||ae-media.ca^
@@ -14864,6 +15136,7 @@ $removeparam=engagement_type
 ||agrvt.com^
 ||aicdn.com^
 ||aimbase.com^
+
 ||aircanada.com^$badfilter  # not a tracker
 ||alaskaair.net^
 ||alcmpn.com^
@@ -14932,7 +15205,7 @@ $removeparam=engagement_type
 ||d1q21flwrme95o.cloudfront.net^
 ||d1wxoezmgmbkmb.cloudfront.net^
 ||d1ygc727n2d4ey.cloudfront.net^
-||d1z9autcf703pk.cloudfront.net^
+||d1z9autcf703pk.cloudfront.net^$badfilter  # CDN
 ||d1zoy6udo0cq8f.cloudfront.net^
 ||d20ohkaloyme4g.cloudfront.net^
 ||d258lu9myqkejp.cloudfront.net^
@@ -14984,6 +15257,7 @@ $removeparam=engagement_type
 ||deernes.com^
 ||defybrick.com^
 ||delonghigroup.com^$badfilter  # not a tracker
+
 ||dev-era-184513.ew.r.appspot.com^
 ||dh0i9ryzlewh.cloudfront.net^
 ||dhlparcel.nl^$badfilter  # not a tracker
@@ -14996,6 +15270,7 @@ $removeparam=engagement_type
 ||directferries.co.uk^$badfilter  # not a tracker
 ||discordapp.com^$badfilter  # not a tracker
 ||dismantlepenantiterrorist.com^
+
 ||disney.com.edgesuite.net^
 ||distribusion.com^
 ||dl906josmvu2y.cloudfront.net^
@@ -15036,9 +15311,11 @@ $removeparam=engagement_type
 ||bangbrosonline.com^
 ||barbmerchant.com^
 ||barnebys.com^
+
 ||basis.net^
 ||bcdn9854324.com^
 ||bclaws.ca^
+||bdydns.com^
 ||bebasads.com^
 ||bedegaming.com^
 ||beopinion.com^
@@ -15102,7 +15379,9 @@ $removeparam=engagement_type
 ||aleno.me^
 ||aliexpress.ru^
 ||almamedia.net^
+
 ||americanairlines.ch^$badfilter  # not a tracker
+
 ||anbieter-vergleich.ch^
 ||ancensored.com^
 ||anrdoezrs.net^
@@ -15115,6 +15394,8 @@ $removeparam=engagement_type
 ||appmobile-bridge-js.s3-eu-west-1.amazonaws.com^
 ||aral.github.io^
 ||arcantel.ch^
+
+
 ||atype.jp^
 ||aura-dsp.com^
 ||autoscout24.ch^$badfilter  # not a tracker
@@ -15149,6 +15430,7 @@ $removeparam=engagement_type
 ||buttons.github.io^
 ||buymeacoffee.com^
 ||bx-cloud.com^
+
 ||cartsguru.io^
 ||carusseldwt.com^
 ||casualnetworksbv.com^
@@ -15161,14 +15443,19 @@ $removeparam=engagement_type
 ||cdntwrk.com^
 ||cdnwebcloud.com^
 ||ch.ch^$badfilter  # swiss gov
+
 ||chart.googleapis.com^$badfilter  # required library
 ||checkfront.com^
 ||chessabc.com^
 ||1000otzyvov.com^
 ||123roulement.be^
+
+
+
 ||1997media.com^
 ||1lib.fr^
 ||321lenet.com^
+
 ||abeille-assurances.fr^
 ||abla.io^
 ||acotedemoi.com^
@@ -15329,6 +15616,7 @@ $removeparam=engagement_type
 ||asda.com.akadns.net^
 ||askanxiety.com^
 ||asksid.ai^
+
 ||assets.nhs.uk^$badfilter  # not a tracker
 ||atreemo.com^
 ||audioboom.com^
@@ -15353,6 +15641,7 @@ $removeparam=engagement_type
 ||birdguides-cdn.com^
 ||birdingtop500.com^
 ||blackbird.b-cdn.net^
+
 ||bm23.com^
 ||bonne-terre-data-layer.com^
 ||boost-next.co.jp^
@@ -15378,6 +15667,7 @@ $removeparam=engagement_type
 ||cni-digital.map.fastly.net^
 ||cnnx.io^
 ||co-buying.com^
+
 ||commbox.io^
 ||contentstack.com^
 ||controq.com^
@@ -16347,6 +16637,7 @@ blog.tivo.com##.sidebar
 ||hsidh.com^
 consent.youtube.com##.saveButtonContainerNarrowScreen > form:nth-of-type(1) > .button.basebutton
 ||lss-for-nemid-server.dk^
+
 ||yieldify.com^
 ||td.yieldify.com^
 ||a.dropoverapp.com^
@@ -17109,6 +17400,7 @@ mijn.intwente.nl##mijn-feedback
 ||ydkwim.targobank.de^
 ||pixiv.net^
 ||smoot.apple.cn^
+||netease.com^
 ||xhscdn.com^
 ||mddcloud.com^
 ||cloudbae.cn^
@@ -17305,6 +17597,7 @@ debijenkorf.nl##.toast--show.toast
 ||ias.rakuten.co.jp^
 ||click.simba.taobao.com^
 ||log.mmstat.com^
+||taobao.com^
 ||dable.io^
 ||tlaol.com^
 ||a.sellpoint.com^
@@ -17636,7 +17929,7 @@ happysocks.com##+js(rc, disabled, header, stay)
 ||.clearbitjs.com^
 ||js.qualified.com^
 ||techtarget.com^$badfilter  # podcast cdn
-||s.pinimg.com^
+||s.pinimg.com^$badfilter  # Pinterest
 ||pixel.pointmediatracker.com^
 ||pointmediatracker.com^
 ||apt.techtarget.com^
@@ -17710,6 +18003,7 @@ $removeparam=cvid
 ||freesoft.dev^
 ||localguidesconnect.com^
 ||cb.socialblade.com^
+||yeah.net^
 ||maquipan.cl^
 ||rhlshipping.com^
 ||pendroid.site^
@@ -18078,6 +18372,7 @@ ing.nl##.cookie-description
 ||phonepe.com^
 ||ovelin.com^
 ||quikr.com^
+||qq.com^
 ||ril.com^
 ||rometic.com^
 ||romwe.com^
@@ -20004,3 +20299,54 @@ hypotheek.nl###cookielaw_idf_overlay
 ||momentive.com^
 ||momentive.ai^
 ||web.de^$third-party
+||ruigrok.nl^
+||clickmarkteffect.nl^
+||s.pinimg.com^$third-party
+@@||s.pinimg.com^$domain=www.pinterest.com
+||i.pinimg.com^$third-party
+@@||i.pinimg.com^$domain=www.pinterest.com
+||avcdn.net^
+||jumpshot.com^
+||analyz-it.be^
+||priormail.analyz-it.be^
+||priormail.eu^
+||shippinghero.vip^
+||bright-sdk.com^
+||brightvpn.com^
+||foursquare.com^
+||venpath.net^
+||bookyourdata.com^
+||lighthouselist.com^
+||ekata.com^
+||datafetcher.com^
+||setapp.click^
+||beacons3.gvt2.com^
+||beacons2.gvt2.com^
+||beacon.shazam.com^
+||api.helpshift.com^
+||sdk.out.usbla.net^
+||rum-http-intake.logs.datadoghq.eu^
+||heartbeat-us.gamesbean.net^
+||prism-us.gamesbean.net^
+||kelkoogroup.net^
+||redirekted.com^
+||liinkedin.com^
+||dekansvanvandaag.com^
+||bigdatanederland.com^
+||bigdata-contest.eu^
+||goddelijkedag.com^
+||profiteren.eu^
+||enviso.io^
+||datadog.pool.ntp.org^
+||getutm.app^
+||google.com.onion^
+||ib.isappcloud.com^
+||2.datadog.pool.ntp.org^
+||3.datadog.pool.ntp.org^
+||1.datadog.pool.ntp.org^
+||fingerfun.com^
+||gamesbean.net^
+||sentry.ente.io^
+||sentry-reporter.ente.io^
+||illusionblack.com^
+||pure.cloud^
